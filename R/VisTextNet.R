@@ -69,7 +69,7 @@ VisTextNet <- function(text_network, alpha = .25, label_degree_cut=0, betweennes
   size <- 3
   if(betweenness){
     size <- betweenness(pruned)
-    size<-size/10
+    size<-log(size)
   }
   
   # make visualization
